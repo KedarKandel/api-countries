@@ -5,7 +5,7 @@ const Titles = () => {
       <li>Name</li>
       <li>Region</li>
       <li>Population</li>
-      <li>Languages</li>
+      <li>Capital</li>
     </ul>
   );
 };

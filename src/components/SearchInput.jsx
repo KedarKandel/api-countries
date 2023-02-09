@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 
 
-const SearchInput = ({ getCountryByName }) => {
+const SearchInput = ({ onSearch }) => {
   const [input, setInput] = useState("");
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(input)
-    getCountryByName(input);
-    setInput(null)
+    onSearch(input);
+    setInput("")
   };
 
   return (
