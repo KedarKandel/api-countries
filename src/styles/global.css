@@ -1,0 +1,191 @@
+/*   app styles*/
+
+.App{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* styles for navbar start */
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background: hsl(209, 23%, 22%);
+}
+.container{
+    width: 1140px;
+    height: 100%;
+    padding: 0px 15px;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   color: white;
+}
+.container .left{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.container .right{
+    display: flex;
+    align-items: center;
+    background-color: skyblue;
+ 
+}
+.searchInput .icon{
+    height: 2rem;
+    width: 2rem;
+}
+
+.searchInput{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 10px;
+    height: 50px;
+    width: 20rem;
+    
+    
+}
+.searchInput>input{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background-color: skyblue;
+}
+/* styles for navbar end */
+
+
+
+/* styles for homepage start */
+
+.home{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    color: white;
+}
+.home-container{  
+    width: 1140px;
+    padding: 0px 15px;
+    margin: auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   align-items: center;
+ 
+}
+/* styles for homepage end */
+
+/* styles for titles start */
+
+.titles{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.titles>li{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+
+/*     Country component styles*/
+
+
+.countryContainer{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.countryContainer h3,img{
+  margin-right: 100px;
+}
+.moreInfo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.moreInfo>ul{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.countryContainer .moreInfo {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+
+
+/* styles for titles end */
+
+/* styles for countryPage start */
+.countryPage{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.countryPage .infoContainer{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    height: 70vh;
+    width: 70%;
+    background-color: white;
+    opacity: .8;
+}
+.infoContainer .top{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top .topLeft{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    gap: 30px;
+   
+}.topLeft .letter{
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   background-color: rgb(194, 49, 49);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 30px;
+}
+
+.infoContainer >img{
+    width: 60%;
+    height: 40%;
+    align-self: center;
+}
+.infoContainer .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.infoContainer .bottom .left{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
