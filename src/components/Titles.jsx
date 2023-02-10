@@ -1,5 +1,6 @@
 const Titles = () => {
   return (
+    <div className="titlesContainer">
     <ul className="titles" >
       <li>Flag</li>
       <li>Name</li>
@@ -7,6 +8,7 @@ const Titles = () => {
       <li>Population</li>
       <li>Capital</li>
     </ul>
+    </div>
   );
 };
 
