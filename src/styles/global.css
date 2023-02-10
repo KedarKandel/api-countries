@@ -81,9 +81,7 @@
 /* styles for homepage end */
 
 /* styles for titles start */
-.titlesContainer{
- 
-}
+
 .titles {
   width: 1140px;
   align-self: left;
@@ -106,7 +104,7 @@
 
 .countryContainer {
   width: 1140px;
- color: wheat;
+ color: white;
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
