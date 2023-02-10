@@ -5,6 +5,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { apiURL } from "../utils/api";
+import Navbar from "../components/Navbar";
 const Country = () => {
   const [country, setCountry] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
