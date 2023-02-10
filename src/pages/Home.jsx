@@ -3,14 +3,14 @@ import Country from "../components/Country";
 import Navbar from "../components/Navbar";
 import Titles from "../components/Titles";
 import { apiURL } from "../utils/api";
-import  ReactPaginate  from "react-paginate";
+import ReactPaginate from "react-paginate";
 
 const Home = () => {
   const [countries, setCountries] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState("");
 
-  //paginate
+  //paginate states and functions start
 
   const [currentCountries, setCurrentCountries] = useState([]);
   const [pageCount, setPageCount] = useState(0);
@@ -25,20 +25,16 @@ const Home = () => {
 
   const handlePageClick = (e) => {
     const newOffset = (e.selected * itemsPerPage) % countries.length;
-    setItemOffset(newOffset)
+    setItemOffset(newOffset);
   };
 
-  //paginate
+  //paginate states and function end
 
   const getAllCountries = async () => {
     try {
       const res = await fetch(`${apiURL}/all`);
-
       if (!res.ok) throw new Error("Something went wrong!");
-
       const data = await res.json();
-      console.log(data);
-
       setCountries(data);
       setIsLoading(false);
     } catch (error) {
@@ -49,12 +45,9 @@ const Home = () => {
   const getCountryByName = async (countryName) => {
     try {
       const res = await fetch(`${apiURL}/name/${countryName}`);
-
       if (!res.ok) throw new Error("Not found any country!");
-
       const data = await res.json();
-      setCountries(data);
-
+      setCurrentCountries(data);
       setIsLoading(false);
     } catch (error) {
       setIsLoading(false);
@@ -84,17 +77,19 @@ const Home = () => {
             </div>
           )}
         </div>
-        <ReactPaginate
-          previousLabel={"← Previous"}
-          nextLabel={"Next →"}
-          pageCount={pageCount}
-          onPageChange={handlePageClick}
-          containerClassName={"pagination"}
-          previousLinkClassName={"pagination__link"}
-          nextLinkClassName={"pagination__link"}
-          disabledClassName={"pagination__link--disabled"}
-          activeClassName={"pagination__link--active"}
-        />
+        {
+          <ReactPaginate
+            previousLabel={"← Previous"}
+            nextLabel={"Next →"}
+            pageCount={pageCount}
+            onPageChange={handlePageClick}
+            containerClassName={"pagination"}
+            previousLinkClassName={"pagination__link"}
+            nextLinkClassName={"pagination__link"}
+            disabledClassName={"pagination__link--disabled"}
+            activeClassName={"pagination__link--active"}
+          />
+        }
       </div>
     </>
   );
