@@ -9,7 +9,7 @@ Vite application.
 
 Run this app locally:
 
-1. Install environment required for react(Nodejs). You can check if node has installed doing node --version on your computer terminal
+1. Install environment required for react(Nodejs). You can check if node has installed typing node --version on your computer terminal(shell)
 
 2. clone this repo on your local machine. 
    - https://github.com/KedarKandel/countries-app-ui.git
