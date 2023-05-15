@@ -2,6 +2,11 @@
 This is a simple react application created using vite which uses countries api and displays information about several aspects in a beautiful user interface.
 Vite application.
 
+# Purpose of the project
+- learn pagination search and filer and limitations,
+- Techologies used are React, React Pagination, vanilla css
+- Api used: Countries Api
+
 Run this app locally:
 
 1. Install environment required for react(Nodejs). You can check if node has installed doing node --version on your computer terminal
